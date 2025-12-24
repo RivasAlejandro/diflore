@@ -263,3 +263,53 @@ h1{font-size: clamp(30px, 5vw, 52px); line-height:1.05; margin:0 0 12px}
   .grid--3{grid-template-columns: repeat(3, 1fr)}
   .contact{grid-template-columns: 1.1fr .9fr}
 }
+
+/* === DiFlore: Hero con una sola imagen real === */
+.hero__image-main{
+  width:100%;
+  max-width:420px;
+  height:320px;
+  border-radius:24px;
+  background-image:url("../img/IMG_0003.jpeg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+/* === DiFlore: Ubicación debajo del hero === */
+.location{
+  background:#fafafa;
+  padding:18px 0;
+  border-top:1px solid #eee;
+}
+.location__inner{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.location__icon{ font-size:22px; }
+.location__text p{
+  margin:2px 0 0;
+  color:var(--muted);
+}
+.location__btn{ margin-left:auto; }
+
+/* === DiFlore: Imágenes por producto (prod-1..6) === */
+.product__img{
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+.prod-1{ background-image:url("../img/IMG_0528.jpeg"); }
+.prod-2{ background-image:url("../img/IMG_1503.jpeg"); }
+.prod-3{ background-image:url("../img/IMG_1987.jpeg"); }
+.prod-4{ background-image:url("../img/IMG_5292.jpeg"); }
+.prod-5{ background-image:url("../img/IMG_3354.jpeg"); }
+.prod-6{ background-image:url("../img/IMG_9026.jpeg"); }
+
+@media (max-width: 920px){
+  .hero__image-main{ max-width: 520px; height: 280px; margin: 18px auto 0; }
+  .location__btn{ margin-left: 0; }
+  .location__inner{ flex-wrap: wrap; }
+}
