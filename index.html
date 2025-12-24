@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>  Diflore Florería | Tepic</title>
+  <meta name="description" content="Arreglos florales, ramos, cumpleaños, aniversarios y más. Entrega a domicilio. Pide por WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>Entrega a domicilio • Tepic</span>
+      <a class="topbar__wa" href="https://wa.me/523115931064" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#" aria-label="DiFlore Florería - inicio">
+        <span class="brand__mark" aria-hidden="true">🌹</span>
+        <span class="brand__text"> DiFlore Florería</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#categorias">Categorías</a>
+        <a href="#destacados">Destacados</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="btn btn--primary" href="https://wa.me/523115931064" target="_blank" rel="noopener">Ordenar</a>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="badge">Ramos, arreglos y detalles</p>
+          <h1>Flores que se ven increíbles (y llegan a tiempo).</h1>
+          <p class="lead">
+            Elige una categoría, mira los destacados y pide por WhatsApp. Si quieres, después conectamos pagos.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="https://wa.me/523115931064" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            <a class="btn btn--ghost" href="#destacados">Ver destacados</a>
+          </div>
+
+          <ul class="hero__bullets">
+            <li>Atención rápida</li>
+            <li>Entrega local</li>
+            <li>Personalización</li>
+          </ul>
+        </div>
+
+        <div class="hero__media" aria-hidden="true">
+          <div class="hero__card">
+            <div class="hero__img"></div>
+            <div class="hero__cardText">
+              <div class="skeleton skeleton--line"></div>
+              <div class="skeleton skeleton--line small"></div>
+            </div>
+          </div>
+          <div class="hero__card hero__card--2">
+            <div class="hero__img alt"></div>
+            <div class="hero__cardText">
+              <div class="skeleton skeleton--line"></div>
+              <div class="skeleton skeleton--line small"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="categorias" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Categorías</h2>
+          <p>Haz clic para abrir WhatsApp con un mensaje listo.</p>
+        </div>
+
+        <div class="grid grid--4">
+          <button class="card card--click" data-msg="Hola, quiero ver opciones de *Cumpleaños* 🙂">
+            <span class="card__icon">🎂</span>
+            <span class="card__title">Cumpleaños</span>
+            <span class="card__desc">Ramos y arreglos para celebrar.</span>
+          </button>
+          <button class="card card--click" data-msg="Hola, quiero ver opciones de *Aniversario* 💐">
+            <span class="card__icon">💐</span>
+            <span class="card__title">Aniversario</span>
+            <span class="card__desc">Detalles románticos y elegantes.</span>
+          </button>
+          <button class="card card--click" data-msg="Hola, quiero ver opciones de *Amor* ❤️">
+            <span class="card__icon">❤️</span>
+            <span class="card__title">Amor</span>
+            <span class="card__desc">Clásicos que nunca fallan.</span>
+          </button>
+          <button class="card card--click" data-msg="Hola, quiero ver opciones de *Otros* 🌼">
+            <span class="card__icon">🌼</span>
+            <span class="card__title">Otros</span>
+            <span class="card__desc">Graduación, agradecimiento, etc.</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="destacados" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Destacados</h2>
+          <p>Placeholders por ahora. Cuando tengas fotos, las metemos en <code>/img</code> y listo.</p>
+        </div>
+
+        <div class="grid grid--3">
+          
+          <article class="product">
+            <div class="product__img" aria-hidden="true"></div>
+            <div class="product__body">
+              <h3>Arreglo #1</h3>
+              <p>Descripción breve del arreglo. Colores, tamaño, ocasión.</p>
+              <div class="product__row">
+                <span class="price">Desde $ —</span>
+                <button class="btn btn--small btn--primary" type="button" data-msg="Hola, me interesa el *Arreglo #1* 🙂 ¿me das precio y disponibilidad?">Pedir</button>
+              </div>
+            </div>
+          </article>
+          
+          <article class="product">
+            <div class="product__img" aria-hidden="true"></div>
+            <div class="product__body">
+              <h3>Arreglo #2</h3>
+              <p>Descripción breve del arreglo. Colores, tamaño, ocasión.</p>
+              <div class="product__row">
+                <span class="price">Desde $ —</span>
+                <button class="btn btn--small btn--primary" type="button" data-msg="Hola, me interesa el *Arreglo #2* 🙂 ¿me das precio y disponibilidad?">Pedir</button>
+              </div>
+            </div>
+          </article>
+          
+          <article class="product">
+            <div class="product__img" aria-hidden="true"></div>
+            <div class="product__body">
+              <h3>Arreglo #3</h3>
+              <p>Descripción breve del arreglo. Colores, tamaño, ocasión.</p>
+              <div class="product__row">
+                <span class="price">Desde $ —</span>
+                <button class="btn btn--small btn--primary" type="button" data-msg="Hola, me interesa el *Arreglo #3* 🙂 ¿me das precio y disponibilidad?">Pedir</button>
+              </div>
+            </div>
+          </article>
+          
+          <article class="product">
+            <div class="product__img" aria-hidden="true"></div>
+            <div class="product__body">
+              <h3>Arreglo #4</h3>
+              <p>Descripción breve del arreglo. Colores, tamaño, ocasión.</p>
+              <div class="product__row">
+                <span class="price">Desde $ —</span>
+                <button class="btn btn--small btn--primary" type="button" data-msg="Hola, me interesa el *Arreglo #4* 🙂 ¿me das precio y disponibilidad?">Pedir</button>
+              </div>
+            </div>
+          </article>
+          
+          <article class="product">
+            <div class="product__img" aria-hidden="true"></div>
+            <div class="product__body">
+              <h3>Arreglo #5</h3>
+              <p>Descripción breve del arreglo. Colores, tamaño, ocasión.</p>
+              <div class="product__row">
+                <span class="price">Desde $ —</span>
+                <button class="btn btn--small btn--primary" type="button" data-msg="Hola, me interesa el *Arreglo #5* 🙂 ¿me das precio y disponibilidad?">Pedir</button>
+              </div>
+            </div>
+          </article>
+          
+          <article class="product">
+            <div class="product__img" aria-hidden="true"></div>
+            <div class="product__body">
+              <h3>Arreglo #6</h3>
+              <p>Descripción breve del arreglo. Colores, tamaño, ocasión.</p>
+              <div class="product__row">
+                <span class="price">Desde $ —</span>
+                <button class="btn btn--small btn--primary" type="button" data-msg="Hola, me interesa el *Arreglo #6* 🙂 ¿me das precio y disponibilidad?">Pedir</button>
+              </div>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container contact">
+        <div>
+          <h2>Contacto</h2>
+          <p>
+            Pide por WhatsApp y te atendemos rápido. Si quieres agregar ubicación, horario y redes,
+            aquí lo dejamos listo.
+          </p>
+
+          <div class="contact__actions">
+            <a class="btn btn--primary" href="https://wa.me/523115931064" target="_blank" rel="noopener">Abrir WhatsApp</a>
+            <button class="btn btn--ghost" id="copyPhone">Copiar número</button>
+          </div>
+
+          <ul class="contact__list">
+            <li><strong>WhatsApp:</strong> <span id="phone">+523115931064</span></li>
+            <li><strong>Horario:</strong> Lunes a Domingo (edítalo)</li>
+            <li><strong>Zona:</strong> Tepic y alrededores (edítalo)</li>
+          </ul>
+        </div>
+
+        <div class="contact__map" aria-label="Mapa (placeholder)">
+          <div class="map__placeholder">
+            <span>📍</span>
+            <p>Mapa / dirección (placeholder)</p>
+            <small>Luego lo cambiamos por Google Maps embed.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Diflore Florería. Todos los derechos reservados.</p>
+      <p class="footer__muted">Hecho con HTML + CSS. Hosting gratis en GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script>
+    const WA_BASE = "https://wa.me/523115931064";
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    function waWithMessage(msg) {
+      const url = WA_BASE + "?text=" + encodeURIComponent(msg);
+      window.open(url, "_blank", "noopener");
+    }
+
+    document.querySelectorAll("[data-msg]").forEach(btn => {
+      btn.addEventListener("click", () => waWithMessage(btn.getAttribute("data-msg")));
+    });
+
+    document.getElementById("copyPhone").addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText("+523115931064");
+        const b = document.getElementById("copyPhone");
+        const prev = b.textContent;
+        b.textContent = "Copiado ✅";
+        setTimeout(() => b.textContent = prev, 1200);
+      } catch (e) {
+        alert("No se pudo copiar. Número: +523115931064");
+      }
+    });
+  </script>
+</body>
+</html>
