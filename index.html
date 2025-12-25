@@ -1,206 +1,280 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-MX">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Di Fiore Florería | Tepic</title>
-  <meta name="description" content="Di Fiore Florería en Tepic. Ramos y arreglos florales con entrega a domicilio. Pide fácil por WhatsApp." />
 
+  <!-- SEO -->
+  <title>Diflore Florería en Tepic | Ramos y Arreglos Florales con Entrega</title>
+  <meta name="description" content="Diflore Florería en Tepic. Ramos y arreglos florales para cumpleaños, aniversarios y ocasiones especiales. Entrega local y pedidos por WhatsApp." />
+  <meta name="author" content="Diflore Florería" />
+  <link rel="canonical" href="https://diflorefloreria.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Diflore Florería en Tepic" />
+  <meta property="og:description" content="Ramos y arreglos florales con entrega local en Tepic. Pide fácil por WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://diflorefloreria.com/" />
+  <meta property="og:image" content="https://diflorefloreria.com/img/IMG_0003.jpeg" />
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Schema (Local Business) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Florist",
+    "name":"Diflore Florería",
+    "image":"https://diflorefloreria.com/img/IMG_0003.jpeg",
+    "url":"https://diflorefloreria.com/",
+    "telephone":"+5213111029503",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"Avenida principal 376, Col. Ferrocarrileros 2da sección",
+      "addressLocality":"Tepic",
+      "addressRegion":"Nayarit",
+      "addressCountry":"MX"
+    },
+    "areaServed":"Tepic, Nayarit",
+    "priceRange":"$$"
+  }
+  </script>
 </head>
 
 <body>
 
   <!-- TOPBAR -->
   <div class="topbar">
-    <div class="container topbar__inner">
-      <span>Entrega a domicilio • Tepic</span>
-      <a class="topbar__wa" href="https://wa.me/5213111029503" target="_blank">Pedir por WhatsApp</a>
+    <div class="container d-flex justify-content-between align-items-center py-2">
+      <span class="topbar__left">Entrega a domicilio • Tepic</span>
+      <a class="topbar__wa" href="https://wa.me/5213111029503" target="_blank" rel="noopener">Pedir por WhatsApp</a>
     </div>
   </div>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container header__inner">
-      <a class="brand" href="#">
-        <span class="brand__mark">🌸</span>
-        <span class="brand__text">Di Fiore Florería</span>
-      </a>
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg py-3">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <span class="brand-mark">🌸</span>
+          <span class="brand-text">Diflore Florería</span>
+        </a>
 
-      <nav class="nav">
-        <a href="#destacados">Arreglos</a>
-        <a href="#contacto">Contacto</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3 mt-3 mt-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#arreglos">Arreglos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-dark rounded-pill px-4" href="https://wa.me/5213111029503" target="_blank" rel="noopener">Ordenar</a>
+            </li>
+          </ul>
+        </div>
       </nav>
+    </div>
 
-      <a class="btn btn--primary" href="https://wa.me/5213111029503" target="_blank">Ordenar</a>
+    <!-- HERO CAROUSEL (mini galería con barritas) -->
+    <div class="container pb-4">
+      <div class="hero-shell">
+        <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-interval="3500">
+          <!-- Indicators (barritas) -->
+          <div class="carousel-indicators hero-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="hero-slide" style="background-image:url('img/IMG_0003.jpeg');"></div>
+            </div>
+            <div class="carousel-item">
+              <div class="hero-slide" style="background-image:url('img/IMG_2795.jpeg');"></div>
+            </div>
+            <div class="carousel-item">
+              <div class="hero-slide" style="background-image:url('img/IMG_1503.jpeg');"></div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Anterior">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Siguiente">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <div class="hero-copy">
+          <div class="hero-badge">Ramos y arreglos florales</div>
+          <h1 class="hero-title">Ramos y  Arreglos Florales</h1>
+          <p class="hero-lead">
+            Elige un arreglo y pide fácil por WhatsApp. Atención rápida y entrega local en Tepic.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <a class="btn btn-dark rounded-pill px-4" href="https://wa.me/5213111029503" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            <a class="btn btn-outline-dark rounded-pill px-4" href="#arreglos">Ver arreglos</a>
+          </div>
+
+          <div class="hero-chips mt-4">
+            <span class="chip">Atención rápida</span>
+            <span class="chip">Entrega local</span>
+            <span class="chip">Personalización</span>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero__inner">
+  <!-- UBICACIÓN -->
+  <section id="ubicacion" class="py-3">
+    <div class="container">
+      <div class="location-bar">
+        <div class="d-flex align-items-start gap-3">
+          <div class="loc-icon">📍</div>
+          <div>
+            <div class="loc-title">Visítanos en tienda</div>
+            <div class="loc-text">Avenida principal 376, Col. Ferrocarrileros 2da sección, Tepic, Nayarit</div>
+          </div>
+        </div>
+        <a class="btn btn-outline-dark rounded-pill px-4" href="https://www.google.com/maps/search/?api=1&query=Avenida%20principal%20376%20Ferrocarrileros%202da%20secci%C3%B3n%20Tepic" target="_blank" rel="noopener">
+          Cómo llegar
+        </a>
+      </div>
+    </div>
+  </section>
 
-      <div class="hero__copy">
-        <p class="badge">Ramos y arreglos florales</p>
-        <h1>Flores que se ven increíbles<br>y llegan a tiempo.</h1>
-        <p class="lead">
-          En Di Fiore Florería preparamos arreglos únicos para cada ocasión.
-          Atención rápida y entrega local en Tepic.
-        </p>
+  <!-- ARREGLOS -->
+  <section id="arreglos" class="py-5 bg-soft">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end gap-3 flex-wrap mb-4">
+        <div>
+          <h2 class="section-title">Arreglos destacados</h2>
+          <p class="section-lead mb-0">Fotos reales. Si quieres uno especial, lo personalizamos por WhatsApp.</p>
+        </div>
+      </div>
 
-        <div class="hero__cta">
-          <a class="btn btn--primary" href="https://wa.me/5213111029503" target="_blank">
-            Pedir por WhatsApp
-          </a>
-          <a class="btn btn--ghost" href="#destacados">Ver arreglos</a>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <div class="product-img" style="background-image:url('img/IMG_0528.jpeg');"></div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5 mb-2">Ramo Rosas Rojas</h3>
+              <p class="card-text text-muted">Clásico, elegante y perfecto para expresar amor.</p>
+              <div class="mt-auto d-flex justify-content-end">
+                <button class="btn btn-dark rounded-pill px-4" data-msg="Hola Diflore 🌸 Me interesa el *Ramo Rosas Rojas*. ¿Me ayudas con opciones y entrega hoy?">Pedir</button>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <ul class="hero__bullets">
-          <li>Entrega el mismo día</li>
-          <li>Arreglos personalizados</li>
-          <li>Atención directa por WhatsApp</li>
-        </ul>
-      </div>
-
-      <div class="hero__media">
-        <div class="hero__image-main"></div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- UBICACIÓN -->
-  <section class="location">
-    <div class="container location__inner">
-      <span class="location__icon">📍</span>
-      <div>
-        <strong>Visítanos en tienda</strong>
-        <p>Avenida principal 376, Col. Ferrocarrileros 2da sección, Tepic, Nayarit</p>
-      </div>
-      <a class="btn btn--ghost"
-         href="https://www.google.com/maps/search/?api=1&query=Avenida%20principal%20376%20Ferrocarrileros%202da%20secci%C3%B3n%20Tepic"
-         target="_blank">Cómo llegar</a>
-    </div>
-  </section>
-
-  <!-- DESTACADOS -->
-  <section id="destacados" class="section section--alt">
-    <div class="container">
-      <h2>Arreglos destacados</h2>
-
-      <div class="grid grid--3">
-
-        <article class="product">
-          <div class="product__img prod-1"></div>
-          <div class="product__body">
-            <h3>Ramo Rosas Rojas</h3>
-            <p>Clásico, elegante y perfecto para expresar amor.</p>
-            <div class="product__row">
-              <span class="price">Desde $650</span>
-              <button class="btn btn--small btn--primary"
-                data-msg="Hola Di  Fiore 🌸 Me interesa el *Ramo Rosas Rojas*. ¿Precio y entrega hoy?">
-                Pedir
-              </button>
+        <!-- Card 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <div class="product-img" style="background-image:url('img/IMG_1503.jpeg');"></div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5 mb-2">Ramo Especial</h3>
+              <p class="card-text text-muted">Arreglo colorido ideal para cumpleaños.</p>
+              <div class="mt-auto d-flex justify-content-end">
+                <button class="btn btn-dark rounded-pill px-4" data-msg="Hola Diflore 🌸 Me interesa el *Ramo Especial*. ¿Qué opciones tienes hoy?">Pedir</button>
+              </div>
             </div>
           </div>
-        </article>
+        </div>
 
-        <article class="product">
-          <div class="product__img prod-2"></div>
-          <div class="product__body">
-            <h3>Ramo Especial</h3>
-            <p>Arreglo colorido ideal para cumpleaños.</p>
-            <div class="product__row">
-              <span class="price">Desde $550</span>
-              <button class="btn btn--small btn--primary"
-                data-msg="Hola Di Fiore 🌸 Me interesa el *Ramo Especial*. ¿Precio y entrega?">
-                Pedir
-              </button>
+        <!-- Card 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <div class="product-img" style="background-image:url('img/IMG_1987.jpeg');"></div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5 mb-2">Aniversario Premium</h3>
+              <p class="card-text text-muted">Diseño romántico para fechas importantes.</p>
+              <div class="mt-auto d-flex justify-content-end">
+                <button class="btn btn-dark rounded-pill px-4" data-msg="Hola Diflore 🌸 Me interesa el *Aniversario Premium*. ¿Lo puedes personalizar?">Pedir</button>
+              </div>
             </div>
           </div>
-        </article>
+        </div>
 
-        <article class="product">
-          <div class="product__img prod-3"></div>
-          <div class="product__body">
-            <h3>Aniversario Premium</h3>
-            <p>Diseño romántico para fechas importantes.</p>
-            <div class="product__row">
-              <span class="price">Desde $850</span>
-              <button class="btn btn--small btn--primary"
-                data-msg="Hola Di Fiore 🌸 Me interesa el *Aniversario Premium*. ¿Precio?">
-                Pedir
-              </button>
+        <!-- Card 4 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <div class="product-img" style="background-image:url('img/IMG_5292.jpeg');"></div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5 mb-2">Arreglo Deluxe</h3>
+              <p class="card-text text-muted">Flores selectas con presentación premium.</p>
+              <div class="mt-auto d-flex justify-content-end">
+                <button class="btn btn-dark rounded-pill px-4" data-msg="Hola Diflore 🌸 Me interesa el *Arreglo Deluxe*. ¿Qué colores puedes manejar?">Pedir</button>
+              </div>
             </div>
           </div>
-        </article>
+        </div>
 
-        <article class="product">
-          <div class="product__img prod-4"></div>
-          <div class="product__body">
-            <h3>Arreglo Deluxe</h3>
-            <p>Flores selectas con presentación premium.</p>
-            <div class="product__row">
-              <span class="price">Desde $1,100</span>
-              <button class="btn btn--small btn--primary"
-                data-msg="Hola Di Fiore 🌸 Me interesa el *Arreglo Deluxe*.">
-                Pedir
-              </button>
+        <!-- Card 5 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <div class="product-img" style="background-image:url('img/IMG_8833.jpeg');"></div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5 mb-2">Girasoles</h3>
+              <p class="card-text text-muted">Arreglo alegre y lleno de vida.</p>
+              <div class="mt-auto d-flex justify-content-end">
+                <button class="btn btn-dark rounded-pill px-4" data-msg="Hola Diflore 🌸 Me interesan los *Girasoles*. ¿Disponibilidad hoy?">Pedir</button>
+              </div>
             </div>
           </div>
-        </article>
+        </div>
 
-        <article class="product">
-          <div class="product__img prod-5"></div>
-          <div class="product__body">
-            <h3>Girasoles</h3>
-            <p>Arreglo alegre y lleno de vida.</p>
-            <div class="product__row">
-              <span class="price">Desde $500</span>
-              <button class="btn btn--small btn--primary"
-                data-msg="Hola Di Fiore 🌸 Me interesan los *Girasoles*.">
-                Pedir
-              </button>
+        <!-- Card 6 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <div class="product-img" style="background-image:url('img/IMG_9026.jpeg');"></div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5 mb-2">Detalle Especial</h3>
+              <p class="card-text text-muted">Ideal para sorprender en cualquier ocasión.</p>
+              <div class="mt-auto d-flex justify-content-end">
+                <button class="btn btn-dark rounded-pill px-4" data-msg="Hola Diflore 🌸 Me interesa el *Detalle Especial*. ¿Qué incluye?">Pedir</button>
+              </div>
             </div>
           </div>
-        </article>
-
-        <article class="product">
-          <div class="product__img prod-6"></div>
-          <div class="product__body">
-            <h3>Detalle Especial</h3>
-            <p>Ideal para sorprender en cualquier ocasión.</p>
-            <div class="product__row">
-              <span class="price">Desde $450</span>
-              <button class="btn btn--small btn--primary"
-                data-msg="Hola Di Fiore 🌸 Me interesa el *Detalle Especial*.">
-                Pedir
-              </button>
-            </div>
-          </div>
-        </article>
+        </div>
 
       </div>
     </div>
   </section>
 
   <!-- CONTACTO -->
-  <section id="contacto" class="section">
+  <section id="contacto" class="py-5">
     <div class="container">
-      <h2>Contacto</h2>
-      <p>Pide directo por WhatsApp y te atendemos rápido.</p>
-      <a class="btn btn--primary" href="https://wa.me/5213111029503" target="_blank">
-        +52 1 311 102 9503
-      </a>
+      <div class="contact-box">
+        <div>
+          <h2 class="section-title mb-2">Contacto</h2>
+          <p class="section-lead mb-0">Pide directo por WhatsApp y te atendemos rápido.</p>
+        </div>
+        <a class="btn btn-dark rounded-pill px-4" href="https://wa.me/5213111029503" target="_blank" rel="noopener">
+          +52 1 311 102 9503
+        </a>
+      </div>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> Di Fiore Florería</p>
+  <footer class="py-4 border-top">
+    <div class="container d-flex justify-content-between flex-wrap gap-2">
+      <div class="text-muted">© <span id="year"></span> Diflore Florería</div>
+      <div class="text-muted">Tepic, Nayarit</div>
     </div>
   </footer>
 
@@ -216,5 +290,7 @@
     });
   </script>
 
+  <!-- Bootstrap JS Bundle (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
